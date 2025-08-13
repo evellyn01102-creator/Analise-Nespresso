@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Coffee, Globe, Recycle } from 'lucide-react';
+import { ArrowDown, Coffee, Globe, Recycle, BarChart2, Layers, Wrench, CheckCircle } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const scrollToIntroduction = () => {
@@ -27,11 +27,12 @@ const Hero: React.FC = () => {
           
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
             Uma perspectiva da Engenharia de Produção na análise das cadeias produtiva, 
-            de suprimentos e de valor na indústria de alimentos
+            de suprimentos e de valor, incluindo KPIs, comparações, melhorias e conclusões
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        {/* Grid com 7 tópicos */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-amber-200 hover:border-amber-300 transition-all duration-300 hover:shadow-lg">
             <Globe className="h-12 w-12 text-amber-700 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Cadeia Produtiva</h3>
@@ -48,6 +49,30 @@ const Hero: React.FC = () => {
             <Recycle className="h-12 w-12 text-amber-700 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Cadeia de Valor</h3>
             <p className="text-gray-600">Criação de valor percebido e vantagem competitiva premium</p>
+          </div>
+
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-amber-200 hover:border-amber-300 transition-all duration-300 hover:shadow-lg">
+            <BarChart2 className="h-12 w-12 text-amber-700 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">KPIs</h3>
+            <p className="text-gray-600">Indicadores-chave para medir eficiência, sustentabilidade e performance</p>
+          </div>
+
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-amber-200 hover:border-amber-300 transition-all duration-300 hover:shadow-lg">
+            <Layers className="h-12 w-12 text-amber-700 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Diferenças entre as Cadeias</h3>
+            <p className="text-gray-600">Comparação estrutural e estratégica das três cadeias analisadas</p>
+          </div>
+
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-amber-200 hover:border-amber-300 transition-all duration-300 hover:shadow-lg">
+            <Wrench className="h-12 w-12 text-amber-700 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Melhorias</h3>
+            <p className="text-gray-600">Oportunidades para otimizar processos e fortalecer a cadeia</p>
+          </div>
+
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-amber-200 hover:border-amber-300 transition-all duration-300 hover:shadow-lg">
+            <CheckCircle className="h-12 w-12 text-amber-700 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Conclusões</h3>
+            <p className="text-gray-600">Síntese dos principais insights e aprendizados do estudo</p>
           </div>
         </div>
 
