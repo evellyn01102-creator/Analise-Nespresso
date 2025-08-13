@@ -136,31 +136,53 @@ const Conclusions: React.FC = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Reflexões Finais do Projeto
           </h3>
-          <div className="prose prose-lg max-w-none text-gray-700">
+          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+            
             <p>
               Ao chegarmos ao final deste projeto, percebemos que a jornada foi tão importante quanto o resultado final. 
               A matéria nos deu a chance de conectar teoria e prática, usando a Nespresso como exemplo real.
             </p>
 
-            <h4 className="text-xl font-bold text-amber-700 mt-6">Nossos Aprendizados</h4>
+            <h4 className="text-xl font-bold text-amber-700">Nossos Aprendizados</h4>
             <p>
-             Um dos maiores aprendizados foi, sem dúvida, conseguir tangibilizar conceitos que, muitas vezes, parecem abstratos na graduação. Mapear a cadeia de suprimentos, discutir a cadeia de valor e, principalmente, analisar os KPIs nos fez enxergar como a engenharia de produção realmente funciona. Deixamos de ver "KPI" como uma sigla em um slide para entendê-lo como uma ferramenta que mede a saúde de uma operação inteira — desde a sustentabilidade na fazenda de café, com o programa AAA, até o crescimento real das vendas no varejo, com o RIG. Foi como montar um quebra-cabeça, onde cada peça, cada etapa do projeto, nos ajudava a ver a imagem completa da estratégia da Nespresso.
+              Um dos maiores aprendizados foi, sem dúvida, conseguir tangibilizar conceitos que, muitas vezes, parecem abstratos na graduação. Mapear a cadeia de suprimentos, discutir a cadeia de valor e, principalmente, analisar os KPIs nos fez enxergar como a engenharia de produção realmente funciona.
+            </p>
+            <p>
+              Deixamos de ver "KPI" como uma sigla em um slide para entendê-lo como uma ferramenta que mede a saúde de uma operação inteira — 
+              desde a sustentabilidade na fazenda de café, com o programa AAA, até o crescimento real das vendas no varejo, com o RIG.
+              Foi como montar um quebra-cabeça, onde cada peça, cada etapa do projeto, nos ajudava a ver a imagem completa da estratégia da Nespresso.
             </p>
 
-            <h4 className="text-xl font-bold text-amber-700 mt-6">Pontos Importantes que Levamos</h4>
+            <h4 className="text-xl font-bold text-amber-700">Pontos Importantes que Levamos</h4>
             <p>
-              O mais marcante foi entender que o sucesso da Nespresso não está apenas na qualidade do café, mas na gestão impecável de todo o seu ecossistema. A empresa conseguiu transformar seus maiores desafios em diferenciais competitivos. 
-              A questão ambiental das cápsulas, por exemplo, que poderia ser seu ponto fraco, tornou-se uma bandeira de sustentabilidade através de um complexo sistema de logística reversa. Vimos que a coerência é a chave: a preocupação com práticas regenerativas na origem se conecta com a busca por desperdício zero na fábrica e com a responsabilidade no pós-consumo. 
+              O mais marcante foi entender que o sucesso da Nespresso não está apenas na qualidade do café, mas na gestão impecável de todo o seu ecossistema. 
+              A empresa conseguiu transformar seus maiores desafios em diferenciais competitivos.
+            </p>
+            <p>
+              A questão ambiental das cápsulas, por exemplo, que poderia ser seu ponto fraco, tornou-se uma bandeira de sustentabilidade através de um complexo sistema de logística reversa.
+              Vimos que a coerência é a chave: a preocupação com práticas regenerativas na origem se conecta com a busca por desperdício zero na fábrica e com a responsabilidade no pós-consumo. 
               Essa visão sistêmica, que amarra a sustentabilidade à performance financeira, foi o ponto mais importante que levamos do estudo de caso.
             </p>
 
-            <h4 className="text-xl font-bold text-amber-700 mt-6">Os Desafios</h4>
+            <h4 className="text-xl font-bold text-amber-700">Os Desafios</h4>
             <p>
-              Nem tudo foi fácil. Como em qualquer projeto real, enfrentamos nossos próprios desafios, principalmente na organização do grupo. Logo no início, tivemos a saída de um integrante, o que nos forçou a redistribuir tarefas e a assumir mais responsabilidades. Além disso, em vários momentos, alguns de nós ficaram doentes, o que poderia ter atrasado todo o cronograma. No entanto, olhando agora, vemos que esses obstáculos foram, na verdade, uma parte fundamental do nosso aprendizado.
-              Esses desafios nos obrigaram a melhorar nossa comunicação de uma forma que talvez não tivéssemos feito em condições normais. 
-              Tivemos que ser mais transparentes sobre nossas dificuldades, pedir ajuda e oferecer suporte uns aos outros. As adversidades acabaram fortalecendo nossa habilidade de trabalhar em equipe. Mais do que apenas dividir tarefas, aprendemos a funcionar como um time de verdade, onde um cobre o outro. 
-              Sentimos que, no fim das contas, foi uma matéria em que os desafios nos mantiveram mais unidos e nos prepararam melhor para a dinâmica do mercado de trabalho.
+              Nem tudo foi fácil. Como em qualquer projeto real, enfrentamos nossos próprios desafios, principalmente na organização do grupo. 
+              Logo no início, tivemos a saída de um integrante, o que nos forçou a redistribuir tarefas e a assumir mais responsabilidades.
             </p>
+            <p>
+              Além disso, em vários momentos, alguns de nós ficaram doentes, o que poderia ter atrasado todo o cronograma. 
+              No entanto, olhando agora, vemos que esses obstáculos foram, na verdade, uma parte fundamental do nosso aprendizado.
+            </p>
+            <p>
+              Esses desafios nos obrigaram a melhorar nossa comunicação de uma forma que talvez não tivéssemos feito em condições normais. 
+              Tivemos que ser mais transparentes sobre nossas dificuldades, pedir ajuda e oferecer suporte uns aos outros.
+            </p>
+            <p>
+              As adversidades acabaram fortalecendo nossa habilidade de trabalhar em equipe. 
+              Mais do que apenas dividir tarefas, aprendemos a funcionar como um time de verdade, onde um cobre o outro. 
+              Sentimos que, no fim das contas, foi uma matéria em que os desafios nos mantiveram mais unidos e nos prepararam melhor para a dinâmica do mercado de trabalho.
+            </p>
+
           </div>
         </div>
       </div>
