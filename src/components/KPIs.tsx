@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart3, Factory, Truck, Store, Leaf } from 'lucide-react';
+import { BarChart3, Factory, Truck, Store, Leaf, HelpCircle } from 'lucide-react';
 
 const KPIs: React.FC = () => {
   const kpiData = [
@@ -23,7 +23,7 @@ const KPIs: React.FC = () => {
       borderColor: 'border-blue-200',
       kpi: 'Consumo de Energia',
       current: '3,24 GJ por tonelada de produto',
-      target: 'Redução progressiva,
+      target: 'Redução progressiva',
       description: 'O Consumo de Energia é um indicador de desempenho que mede a eficiência com que uma empresa utiliza a energia em suas operações de fabricação. A Nespresso utiliza o baseline de 3,76 GJ por tonelada (2023)',
       importance: 'Avalia diretamente a eficiência energética de uma operação industrial, relacionando o consumo de energia (um custo primário) com a produção (a receita primária). É fundamental para a otimização de custos e para a redução do impacto ambiental.'
     },
@@ -65,6 +65,21 @@ const KPIs: React.FC = () => {
     }
   ];
 
+  const perguntasRespostas = [
+    {
+      pergunta: 'Qual a importância dos KPIs na cadeia de suprimentos do nosso grupo?',
+      resposta: 'No caso da Nespresso, os KPIs conectam toda a estratégia da marca — desde a fazenda até a loja. Eles garantem que a promessa de um café premium e sustentável seja cumprida em cada etapa, medindo desde práticas agrícolas regenerativas, passando por eficiência e desperdício zero na produção, até a logística reversa de cápsulas e o Crescimento Orgânico Real no varejo. Assim, provam que a estratégia funciona na prática.'
+    },
+    {
+      pergunta: 'Quais são os KPIs mais importantes na indústria de alimentos?',
+      resposta: 'Os principais pilares são: sustentabilidade na origem (ex.: agricultura regenerativa), eficiência sustentável na produção (ex.: consumo de energia e desperdício zero), responsabilidade pelo ciclo de vida do produto (ex.: coleta de cápsulas) e saúde financeira (ex.: RIG). Juntos, eles garantem que a empresa seja responsável e competitiva.'
+    },
+    {
+      pergunta: 'Como essa reflexão nos torna mais conscientes sobre eles?',
+      resposta: 'Aprendemos que todas as etapas da cadeia estão interligadas. Uma decisão na origem impacta diretamente a imagem e as vendas no varejo. Como futuros engenheiros de produção, entendemos que não se trata apenas de otimizar processos isolados, mas de pensar no sistema como um todo, garantindo eficiência, responsabilidade e sustentabilidade.'
+    }
+  ];
+
   return (
     <section id="kpis" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -87,6 +102,7 @@ const KPIs: React.FC = () => {
           </p>
         </div>
 
+        {/* Lista de KPIs */}
         <div className="space-y-8">
           {kpiData.map((item, index) => (
             <div 
@@ -131,34 +147,19 @@ const KPIs: React.FC = () => {
           ))}
         </div>
 
+        {/* Perguntas e respostas */}
         <div className="mt-16 bg-white rounded-2xl p-8 border border-gray-200">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Integração dos KPIs na Cadeia de Valor
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center flex items-center justify-center gap-2">
+            <HelpCircle className="h-6 w-6 text-green-600" />
+            Reflexões sobre os KPIs
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="text-center p-4">
-              <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Leaf className="h-6 w-6 text-white" />
+          <div className="space-y-6">
+            {perguntasRespostas.map((item, index) => (
+              <div key={index} className="bg-slate-50 p-6 rounded-xl border border-gray-200 hover:shadow-md transition-all duration-200">
+                <h4 className="font-semibold text-lg text-gray-900 mb-2">{item.pergunta}</h4>
+                <p className="text-gray-700 leading-relaxed text-sm">{item.resposta}</p>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Sustentabilidade</h4>
-              <p className="text-sm text-gray-600">KPIs ambientais garantem práticas regenerativas e desperdício zero</p>
-            </div>
-            
-            <div className="text-center p-4">
-              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Factory className="h-6 w-6 text-white" />
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Eficiência</h4>
-              <p className="text-sm text-gray-600">Monitoramento de energia e processos para otimização contínua</p>
-            </div>
-            
-            <div className="text-center p-4">
-              <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Store className="h-6 w-6 text-white" />
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Crescimento</h4>
-              <p className="text-sm text-gray-600">RIG e logística reversa impulsionam crescimento sustentável</p>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -178,7 +179,6 @@ const KPIs: React.FC = () => {
             </a>
           </div>
         </div>
-
       </div>
     </section>
   );
