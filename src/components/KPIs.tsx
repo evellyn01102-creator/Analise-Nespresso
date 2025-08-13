@@ -181,6 +181,22 @@ Nossa função é pensar no sistema como um todo, construindo cadeias de suprime
           </div>
         </div>
 
+         {/* BLOQUINHO DE REDIRECIONAMENTO */}
+        <div className="mt-8 text-center">
+          <div className="inline-block bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">
+              Acesse o consolidado para os KPIs
+            </h4>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1Ihzd-hn26VNXPPRSRboepdINvqkP0wotz2jkTrXPB_M/edit?gid=312259820#gid=312259820"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition-colors"
+            >
+              Acessar Planilha Completa
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
