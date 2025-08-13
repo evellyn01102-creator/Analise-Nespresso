@@ -68,21 +68,39 @@ const KPIs: React.FC = () => {
   const perguntasRespostas = [
     {
       pergunta: 'Qual a importância dos KPIs na cadeia de suprimentos do nosso grupo?',
-      resposta: 'No caso da Nespresso, os KPIs conectam toda a estratégia da marca — desde a fazenda até a loja. Eles garantem que a promessa de um café premium e sustentável seja cumprida em cada etapa, medindo desde práticas agrícolas regenerativas, passando por eficiência e desperdício zero na produção, até a logística reversa de cápsulas e o Crescimento Orgânico Real no varejo. Assim, provam que a estratégia funciona na prática.'
+      resposta: `No nosso trabalho sobre a Nespresso, percebemos que os KPIs vão muito além de simples números em uma planilha. Eles funcionam como o elo que conecta toda a estratégia da marca — desde a fazenda de café até a loja. Na prática, garantem que a promessa de oferecer um café premium e sustentável seja cumprida em cada etapa.
+      
+Por exemplo, o KPI de agricultura regenerativa, aplicado aos fornecedores, mostra que a preocupação com o meio ambiente começa na origem. Na fábrica, os indicadores de consumo de energia e desperdício zero comprovam que a produção também segue padrões limpos e responsáveis. E o pós-consumo fecha o ciclo, com o KPI de capacidade de coleta das cápsulas, que evidencia a responsabilidade da empresa até o fim da vida útil do produto.
+      
+Por último, o RIG (Crescimento Orgânico Real) no varejo demonstra que todo esse esforço em sustentabilidade não é apenas marketing, mas efetivamente convence o consumidor e impulsiona o crescimento da marca. Em resumo, os KPIs têm a função de amarrar toda a narrativa e provar, com dados concretos, que a estratégia funciona na prática.`
     },
     {
       pergunta: 'Quais são os KPIs mais importantes na indústria de alimentos?',
-      resposta: 'Os principais pilares são: sustentabilidade na origem (ex.: agricultura regenerativa), eficiência sustentável na produção (ex.: consumo de energia e desperdício zero), responsabilidade pelo ciclo de vida do produto (ex.: coleta de cápsulas) e saúde financeira (ex.: RIG). Juntos, eles garantem que a empresa seja responsável e competitiva.'
+      resposta: `Analisando o caso da Nespresso, conseguimos identificar quais indicadores são fundamentais para a indústria de alimentos atualmente. Mais do que garantir um produto saboroso, é essencial observar como ele é produzido.
+      
+O primeiro pilar é a sustentabilidade na origem, representada pelo KPI de agricultura regenerativa. Hoje, o consumidor quer saber a procedência dos alimentos, e uma matéria-prima obtida de forma ética é indispensável.
+      
+O segundo pilar é a eficiência sustentável na produção, medida por KPIs como consumo de energia e desperdício zero. Reduzir o uso de recursos beneficia tanto o planeta quanto a saúde financeira da empresa.
+      
+O terceiro pilar é a responsabilidade pelo ciclo de vida do produto, evidenciada pelo KPI de coleta de cápsulas, que reforça que as empresas não podem ignorar o impacto dos resíduos que geram.
+      
+Por fim, a saúde financeira é indispensável — e o crescimento orgânico (RIG) é a prova de que a marca avança graças à força da sua estratégia. Quando esse indicador é positivo, significa que todo o conjunto de ações está funcionando.`
     },
     {
       pergunta: 'Como essa reflexão nos torna mais conscientes sobre eles?',
-      resposta: 'Aprendemos que todas as etapas da cadeia estão interligadas. Uma decisão na origem impacta diretamente a imagem e as vendas no varejo. Como futuros engenheiros de produção, entendemos que não se trata apenas de otimizar processos isolados, mas de pensar no sistema como um todo, garantindo eficiência, responsabilidade e sustentabilidade.'
+      resposta: `Essa análise mudou bastante nossa perspectiva. Antes, talvez víssemos cada etapa da cadeia separadamente. Agora, entendemos que tudo está interligado e que a gestão na indústria de alimentos é como um grande quebra-cabeça.
+      
+Os KPIs mostraram que uma decisão tomada na fazenda, relacionada a práticas agrícolas, pode ter impacto direto na imagem da marca e nas vendas no varejo. Como futuros engenheiros de produção, saímos dessa experiência mais conscientes de que nosso papel vai muito além de otimizar uma linha de produção isolada.
+      
+Nossa função é pensar no sistema como um todo, construindo cadeias de suprimentos eficientes, responsáveis e sustentáveis — porque, no fim das contas, é isso que gera valor real no mercado atual.`
     }
   ];
 
   return (
     <section id="kpis" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Cabeçalho */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 bg-slate-100 px-4 py-2 rounded-full text-slate-800 font-medium mb-6">
             <BarChart3 className="h-5 w-5" />
@@ -156,29 +174,13 @@ const KPIs: React.FC = () => {
           <div className="space-y-6">
             {perguntasRespostas.map((item, index) => (
               <div key={index} className="bg-slate-50 p-6 rounded-xl border border-gray-200 hover:shadow-md transition-all duration-200">
-                <h4 className="font-semibold text-lg text-gray-900 mb-2">{item.pergunta}</h4>
-                <p className="text-gray-700 leading-relaxed text-sm">{item.resposta}</p>
+                <h4 className="font-semibold text-lg text-gray-900 mb-4">{item.pergunta}</h4>
+                <p className="text-gray-700 whitespace-pre-line leading-relaxed text-sm">{item.resposta}</p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* BLOQUINHO DE REDIRECIONAMENTO */}
-        <div className="mt-8 text-center">
-          <div className="inline-block bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h4 className="text-lg font-semibold text-gray-900 mb-3">
-              Acesse o consolidado dos KPIs montado em aula
-            </h4>
-            <a
-              href="https://docs.google.com/spreadsheets/d/1Ihzd-hn26VNXPPRSRboepdINvqkP0wotz2jkTrXPB_M/edit?gid=312259820#gid=312259820"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-5 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition-colors"
-            >
-              Acessar Planilha
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
