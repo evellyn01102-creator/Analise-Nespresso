@@ -58,8 +58,8 @@ const KPIs: React.FC = () => {
       bgColor: 'bg-amber-50',
       borderColor: 'border-amber-200',
       kpi: 'Crescimento Orgânico Real (RIG - Real Internal Growth)',
-      current: 'Monitoramento trimestral',
-      target: 'Crescimento sustentável',
+      current: '2.2%',
+      target: 'Não Estabelecido',
       description: 'O Crescimento Orgânico Real (RIG) é um KPI da Nestlé que mede o crescimento do volume de vendas, isolando o efeito do aumento de preços. Ele mostra se a empresa está vendendo mais unidades de produto.',
       importance: 'Este é um dos indicadores de saúde financeira mais importantes para a empresa e para os investidores. Ele revela se a marca está crescendo e ganhando participação de mercado de forma "saudável" (baseada em mais pessoas comprando) e não apenas como reflexo da inflação. Um RIG forte é um sinal de grande vitalidade da marca.'
     }

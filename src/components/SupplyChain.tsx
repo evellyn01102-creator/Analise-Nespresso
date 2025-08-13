@@ -152,7 +152,7 @@ const SupplyChain: React.FC = () => {
                 <li>• Recuperação de calor para aquecimento</li>
                 <li>• 100% energia renovável certificada</li>
                 <li>• Zero resíduo para aterro</li>
-                <li>• Uso da gravidade no sistema de produção</li>
+                <li>• Painéis solares para geração elétrica</li>
               </ul>
             </div>
             <div>
@@ -161,7 +161,6 @@ const SupplyChain: React.FC = () => {
                 <li>• Coleta e reciclagem de água da chuva</li>
                 <li>• Uso de água do rio para resfriamento</li>
                 <li>• Economia de 230.000 m³ de gás/ano</li>
-                <li>• Painéis solares para geração elétrica</li>
               </ul>
             </div>
           </div>
