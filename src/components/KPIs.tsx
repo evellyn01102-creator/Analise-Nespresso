@@ -22,10 +22,10 @@ const KPIs: React.FC = () => {
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
       kpi: 'Consumo de Energia',
-      current: ' 3,24 GJ por tonelada de produto',
+      current: '3,24 GJ por tonelada de produto',
       target: 'Redução progressiva. Baseline de 3,76 GJ por tonelada (2023)',
       description: 'O Consumo de Energia é um indicador de desempenho que mede a eficiência com que uma empresa utiliza a energia em suas operações de fabricação.',
-      importance: 'Avalia diretamente a eficiência energética de uma operação industrial, relacionando o consumo de energia (um custo primário) com a produção (a receita primária). É fundamental para a otimização de custos e para a redução do impacto ambiental. A empresa atualmente '
+      importance: 'Avalia diretamente a eficiência energética de uma operação industrial, relacionando o consumo de energia (um custo primário) com a produção (a receita primária). É fundamental para a otimização de custos e para a redução do impacto ambiental.'
     },
     {
       actor: 'Fábricas',
@@ -161,6 +161,24 @@ const KPIs: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* BLOQUINHO DE REDIRECIONAMENTO */}
+        <div className="mt-8 text-center">
+          <div className="inline-block bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">
+              Acesse a Planilha contendo o consolidado dos KPIs
+            </h4>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1Ihzd-hn26VNXPPRSRboepdINvqkP0wotz2jkTrXPB_M/edit?gid=312259820#gid=312259820"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition-colors"
+            >
+              Acessar Relatório Completo
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
   );
