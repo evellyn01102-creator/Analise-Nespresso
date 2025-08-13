@@ -23,8 +23,8 @@ const KPIs: React.FC = () => {
       borderColor: 'border-blue-200',
       kpi: 'Consumo de Energia',
       current: '3,24 GJ por tonelada de produto',
-      target: 'Redução progressiva. Baseline de 3,76 GJ por tonelada (2023)',
-      description: 'O Consumo de Energia é um indicador de desempenho que mede a eficiência com que uma empresa utiliza a energia em suas operações de fabricação.',
+      target: 'Redução progressiva,
+      description: 'O Consumo de Energia é um indicador de desempenho que mede a eficiência com que uma empresa utiliza a energia em suas operações de fabricação. A Nespresso utiliza o baseline de 3,76 GJ por tonelada (2023)',
       importance: 'Avalia diretamente a eficiência energética de uma operação industrial, relacionando o consumo de energia (um custo primário) com a produção (a receita primária). É fundamental para a otimização de custos e para a redução do impacto ambiental.'
     },
     {
