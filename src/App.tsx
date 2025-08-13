@@ -12,6 +12,7 @@ import Conclusions from './components/Conclusions';
 import References from './components/References';
 import Footer from './components/Footer';
 import BeerGame from './components/BeerGame';
+import Stage4 from './components/Stage4';
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -49,6 +50,7 @@ function App() {
         <KPIs />
         <ChainDifferences />
         <ImprovementOpportunities />
+        <Stage4 />
         <BeerGame />
         <Conclusions />
         <References />
