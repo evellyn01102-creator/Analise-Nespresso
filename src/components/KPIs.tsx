@@ -10,7 +10,7 @@ const KPIs: React.FC = () => {
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200',
       kpi: 'Porcentagem de Café AAA Sourced de Fazendas com Práticas Regenerativas',
-      current: '85%',
+      current: '91.4%',
       target: '95% até 2030',
       description: 'Este indicador mede a porcentagem do café Nespresso AAA que vem de fazendas com práticas de agricultura regenerativa. A meta da Nespresso é que 95% de seu café AAA venha dessas fazendas até 2030; em 2023, esse número foi de 85%.',
       importance: 'Este KPI é vital para a sustentabilidade ambiental, promovendo a saúde do solo, a biodiversidade e a captura de carbono. Ele também assegura a qualidade do café, aumenta a resiliência dos produtores frente às mudanças climáticas e fortalece a reputação da Nespresso como uma marca responsável.'
@@ -22,10 +22,10 @@ const KPIs: React.FC = () => {
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
       kpi: 'Consumo de Energia',
-      current: 'Monitoramento contínuo',
-      target: 'Redução progressiva',
+      current: ' 3,24 GJ por tonelada de produto',
+      target: 'Redução progressiva. Baseline de 3,76 GJ por tonelada (2023)',
       description: 'O Consumo de Energia é um indicador de desempenho que mede a eficiência com que uma empresa utiliza a energia em suas operações de fabricação.',
-      importance: 'Avalia diretamente a eficiência energética de uma operação industrial, relacionando o consumo de energia (um custo primário) com a produção (a receita primária). É fundamental para a otimização de custos e para a redução do impacto ambiental.'
+      importance: 'Avalia diretamente a eficiência energética de uma operação industrial, relacionando o consumo de energia (um custo primário) com a produção (a receita primária). É fundamental para a otimização de custos e para a redução do impacto ambiental. A empresa atualmente '
     },
     {
       actor: 'Fábricas',
