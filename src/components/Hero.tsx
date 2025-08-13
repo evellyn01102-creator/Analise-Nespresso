@@ -69,6 +69,12 @@ const Hero: React.FC = () => {
             <p className="text-gray-600">Oportunidades para otimizar processos e fortalecer a cadeia</p>
           </div>
 
+           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-amber-200 hover:border-amber-300 transition-all duration-300 hover:shadow-lg">
+            <CheckCircle className="h-12 w-12 text-amber-700 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">BeerGame</h3>
+            <p className="text-gray-600">Principais conclusões da dinâmica</p>
+          </div>
+
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-amber-200 hover:border-amber-300 transition-all duration-300 hover:shadow-lg">
             <CheckCircle className="h-12 w-12 text-amber-700 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Conclusões</h3>
