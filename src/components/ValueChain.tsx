@@ -185,12 +185,14 @@ const ValueChain: React.FC = () => {
         </div>
         {/* Imagem adicionada */}
         <div className="mt-16 text-center">
-          <img 
-            src="/image.png" 
-            alt="Descrição da imagem" 
-            className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl border border-blue-200"
- 
-          />
+          <div className="mb-8">
+            <img 
+              src="/image.png" 
+              alt="Descrição da imagem" 
+              className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl border border-blue-200"
+  
+            />
+          </div>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                 Logística reversa como valor agregado para uma solução sustentável
           </p>
