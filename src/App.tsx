@@ -1,63 +1,62 @@
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Introduction from './components/Introduction';
-import ProductiveChain from './components/ProductiveChain';
-import SupplyChain from './components/SupplyChain';
-import ValueChain from './components/ValueChain';
-import KPIs from './components/KPIs';
-import ChainDifferences from './components/ChainDifferences';
-import ImprovementOpportunities from './components/ImprovementOpportunities';
-import Conclusions from './components/Conclusions';
-import References from './components/References';
-import Footer from './components/Footer';
-import BeerGame from './components/BeerGame';
-import Stage4 from './components/Stage4';
+import React, { useState, useEffect } from "react";
 
-function App() {
-  const [activeSection, setActiveSection] = useState('hero');
+interface HeaderProps {
+  activeSection: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ activeSection }) => {
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'introduction', 'productive-chain', 'supply-chain', 'value-chain', 'kpis', 'improvement-opportunities','stage-4','beer-game','conclusions', 'references'];
-      const scrollPosition = window.scrollY + 100;
-
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
+      setScrolled(window.scrollY > 50);
     };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
-      <Header activeSection={activeSection} />
-      <main>
-        <Hero />
-        <Introduction />
-        <ProductiveChain />
-        <SupplyChain />
-        <ValueChain />
-        <KPIs />
-        <ChainDifferences />
-        <ImprovementOpportunities />
-        <Stage4 />
-        <BeerGame />
-        <Conclusions />
-        <References />
-      </main>
-      <Footer />
-    </div>
-  );
-}
+  const menuItems = [
+    { id: "hero", label: "Início" },
+    { id: "introduction", label: "Introdução" },
+    { id: "productive-chain", label: "Cadeia Produtiva" },
+    { id: "supply-chain", label: "Cadeia de Suprimentos" },
+    { id: "value-chain", label: "Cadeia de Valor" },
+    { id: "kpis", label: "KPIs" },
+    { id: "chain-differences", label: "Diferenças" },
+    { id: "improvement-opportunities", label: "Melhorias" },
+    { id: "stage-4", label: "Etapa 4" },
+    { id: "beer-game", label: "BeerGame" },
+    { id: "conclusions", label: "Conclusões" },
+    { id: "references", label: "Referências" },
+  ];
 
-export default App;
+  return (
+    <header
+      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
+        scrolled ? "bg-[#F5E6DA] shadow-md" : "bg-white"
+      }`}
+    >
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+        <h1 className="font-bold text-lg text-amber-800">☕ Análise Nespresso</h1>
+        <ul className="flex space-x-6">
+          {menuItems.map((item) => (
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                className={`transition-colors ${
+                  activeSection === item.id
+                    ? "bg-yellow-200 px-2 py-1 rounded"
+                    : "hover:text-amber-700"
+                }`}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
