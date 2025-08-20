@@ -15,11 +15,11 @@ const BeerGame: React.FC = () => {
   ];
 
   const costs = [
-    { actor: 'Varejista', r1: 141, r2: 1414, r3: 72, total: 1627 },
-    { actor: 'Distribuidor', r1: 93, r2: 3789, r3: 9, total: 3891 },
-    { actor: 'Fábrica', r1: 4620, r2: 4200, r3: 24, total: 8844 },
-    { actor: 'Fornecedor', r1: 760, r2: 2430, r3: 37, total: 3227 },
-    { actor: 'TOTAL', r1: 5614, r2: 11833, r3: 142, total: 17589 },
+    { actor: 'Varejista', r1: 141, r2: 1.414, r3: 72, total: 1.627 },
+    { actor: 'Distribuidor', r1: 93, r2: 3.789, r3: 9, total: 3.891 },
+    { actor: 'Fábrica', r1: 4.620, r2: 4.200, r3: 24, total: 8.844 },
+    { actor: 'Fornecedor', r1: 760, r2: 2.430, r3: 37, total: 3.227 },
+    { actor: 'TOTAL', r1: 5614, r2: 11.833, r3: 142, total: 17.589 },
   ];
 
   return (
