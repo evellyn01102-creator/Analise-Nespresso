@@ -39,7 +39,6 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
             <Coffee className="h-8 w-8 text-amber-700" />
             <div className="hidden md:block">
               <h1 className="text-lg font-bold text-gray-900">Análise Nespresso</h1>
-              <p className="text-xs text-gray-600">Engenharia de Produção</p>
             </div>
           </div>
 
