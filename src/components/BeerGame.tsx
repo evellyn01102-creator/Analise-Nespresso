@@ -23,8 +23,13 @@ const BeerGame: React.FC = () => {
   ];
 
   return (
-    <section id="beer-game" className="py-20 bg-gradient-to-br from-yellow-50 to-orange-50">
+    <section id="beer-game" className="py-20 bg-[#f5f0e6]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Título principal */}
+        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-16">
+          Beer Game – Dinâmica da Cadeia de Suprimentos
+        </h2>
 
         {/* Estratégias */}
         <div className="mb-16">
