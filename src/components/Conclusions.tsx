@@ -137,7 +137,6 @@ const Conclusions: React.FC = () => {
             Reflexões Finais do Projeto
           </h3>
           <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-            
             <p>
               Ao chegarmos ao final deste projeto, percebemos que a jornada foi tão importante quanto o resultado final. 
               A matéria nos deu a chance de conectar teoria e prática, usando a Nespresso como exemplo real.
@@ -182,8 +181,20 @@ const Conclusions: React.FC = () => {
               Mais do que apenas dividir tarefas, aprendemos a funcionar como um time de verdade, onde um cobre o outro. 
               Sentimos que, no fim das contas, foi uma matéria em que os desafios nos mantiveram mais unidos e nos prepararam melhor para a dinâmica do mercado de trabalho.
             </p>
-
           </div>
+        </div>
+
+        {/* Bloco de Participantes */}
+        <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-200 mt-12">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Participantes do Grupo
+          </h3>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center text-gray-800 font-medium">
+            <li>Ágatha Lima Soares</li>
+            <li>Evellyn Caroline Moura Silva</li>
+            <li>Luisa Solymos</li>
+            <li>Sofia Carvalho da Silva Macedo</li>
+          </ul>
         </div>
       </div>
     </section>
