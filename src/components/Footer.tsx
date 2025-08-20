@@ -11,7 +11,6 @@ const Footer: React.FC = () => {
               <Coffee className="h-8 w-8 text-amber-400" />
               <div>
                 <h3 className="text-xl font-bold">Análise Nespresso</h3>
-                <p className="text-gray-400 text-sm">Engenharia de Produção</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
