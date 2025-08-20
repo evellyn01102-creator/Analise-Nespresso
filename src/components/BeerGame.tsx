@@ -1,5 +1,5 @@
 import React from 'react';
-import { Lightbulb, Package, BarChart3, TrendingUp } from 'lucide-react';
+import { Lightbulb, Package, BarChart3, TrendingUp, FileSpreadsheet, FileText } from 'lucide-react';
 
 const BeerGame: React.FC = () => {
   const strategies = [
@@ -19,13 +19,13 @@ const BeerGame: React.FC = () => {
     { actor: 'Distribuidor', r1: 93, r2: 3.789, r3: 9, total: 3.891 },
     { actor: 'Fábrica', r1: 4.620, r2: 4.200, r3: 24, total: 8.844 },
     { actor: 'Fornecedor', r1: 760, r2: 2.430, r3: 37, total: 3.227 },
-    { actor: 'TOTAL', r1: 5614, r2: 11.833, r3: 142, total: 17.589 },
+    { actor: 'TOTAL', r1: 5.614, r2: 11.833, r3: 142, total: 17.589 },
   ];
 
   return (
-    <section id="beer-game" className="py-20 bg-[#f5f0e6]">
+    <section id="beer-game" className="py-20 bg-gradient-to-br from-yellow-50 to-orange-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
+        
         {/* Título principal */}
         <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-16">
           Beer Game – Dinâmica da Cadeia de Suprimentos
@@ -98,7 +98,7 @@ const BeerGame: React.FC = () => {
         </div>
 
         {/* Reflexões Finais */}
-        <div className="bg-white rounded-2xl p-8 border border-yellow-200">
+        <div className="bg-white rounded-2xl p-8 border border-yellow-200 mb-12">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
             <TrendingUp className="mr-2" /> Reflexões Finais
           </h3>
@@ -111,6 +111,26 @@ const BeerGame: React.FC = () => {
           <p className="text-gray-700 leading-relaxed mt-4">
             A colaboração e a visão sistêmica entre todos os elos da cadeia são fundamentais para garantir eficiência e competitividade.
           </p>
+        </div>
+
+        {/* Botões */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://docs.google.com/spreadsheets/d/11N-08KVRh4NeVZD-FG-RE2VUpmdqFmN8/edit?usp=sharing&ouid=101107061151666428165&rtpof=true&sd=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center px-6 py-3 bg-green-600 text-white rounded-xl shadow hover:bg-green-700 transition"
+          >
+            <FileSpreadsheet className="mr-2" /> Ver Planilha
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1vrcDe8ptsB8na9f30U4TQjpLhZPkd9QT/edit?usp=sharing&ouid=101107061151666428165&rtpof=true&sd=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition"
+          >
+            <FileText className="mr-2" /> Ver Relatório
+          </a>
         </div>
       </div>
     </section>
